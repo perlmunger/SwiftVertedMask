@@ -26,9 +26,6 @@ class ViewController: UIViewController {
         
         self.view.layer.addSublayer(mainLayer)
         
-        let radius = 50 as CGFloat
-        let width = 50 as CGFloat
-        
         let origin = CGPointMake(0, 100)
         let end = CGPointMake(100,100)
         let highAmplitude = CGPointMake(50,180)
@@ -68,13 +65,13 @@ class ViewController: UIViewController {
         mainLayer.addAnimation(animRotate, forKey: "animRotate")
         
         // Build a Circle CGPath
-        var circlePath = CGPathCreateMutable()
+        let circlePath = CGPathCreateMutable()
         CGPathAddEllipseInRect(circlePath, nil, CGRectInset(mainLayer.bounds, -20.0, -20.0))
         // Invert the mask by adding a bounding rectangle
         CGPathAddRect(circlePath, nil, CGRectInset(mainLayer.bounds, -100.0, -100.0))
         CGPathCloseSubpath(circlePath)
         
-        // View this in the debugger to see the actual path
+        // Mouse over this variable in the debugger to see the actual path
         var bPath = UIBezierPath(CGPath: circlePath)
         
         let circleLayer = CAShapeLayer()

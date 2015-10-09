@@ -156,6 +156,8 @@
 		B3CA3B0119FECD4600581FCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Skye Road Systems";
 				TargetAttributes = {
@@ -405,6 +407,7 @@
 				B3CA3B2A19FECD4600581FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3CA3B2B19FECD4600581FCC /* Build configuration list for PBXNativeTarget "SwiftVertedMaskTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				B3CA3B2D19FECD4600581FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
